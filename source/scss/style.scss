@@ -1,0 +1,43 @@
+// @import "global/normalize";
+
+// @import "global/font";
+
+@import "global/colors";
+
+@import "global/image";
+
+@import "global/visually-hidden";
+
+@import "global/hide";
+
+@import "blocks/page";
+
+@import "blocks/button";
+
+@import "blocks/title";
+
+@import "blocks/description";
+
+@import "blocks/page-header";
+
+@import "blocks/main-nav";
+
+@import "blocks/promo";
+
+@import "blocks/bullets";
+
+@import "blocks/page-footer";
+
+// @mixin ph {
+//   @media (max-width: 700px) {
+//     @content;
+//   }
+// }
+
+// body {
+
+//   @include ph {
+//     color: white;
+//     background-color: black;
+//   }
+// }

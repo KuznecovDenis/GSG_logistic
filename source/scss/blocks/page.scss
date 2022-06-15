@@ -1,0 +1,18 @@
+.page {
+  height: 100%;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.page__body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  color: $text-dark;
+  background-color: $bg-light;
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}

@@ -1,0 +1,41 @@
+.promo {
+  color: $text-light;
+  position: relative;
+  min-height: 974px;
+}
+
+.promo__bg {
+  background-repeat: no-repeat;
+  background-color: dimgray;
+  // background-image: url(../img/section_delivery_x2.jpg);
+  background-size: cover;
+  padding-top: 120px;
+  padding-bottom: 183px;
+}
+
+.promo__wrapper {
+  width: 300px;
+  // width: 93.75%;
+  // width: calc(100% - 20px);
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.promo__title {
+  padding: 0 15px 20px;
+}
+
+.promo__description {
+  padding: 0 15px 50px;
+}
+
+.promo__bullets {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+
