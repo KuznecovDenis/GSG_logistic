@@ -6,9 +6,11 @@
 
 .promo__bg {
   background-repeat: no-repeat;
-  background-color: dimgray;
-  // background-image: url(../img/section_delivery_x2.jpg);
-  background-size: cover;
+  background-color: $bg-dark;
+  background-image: url(../img/bg-promo.jpg);
+  background-position-y: 58%;
+  background-position-x: center;
+  background-size: 1440px;
   padding-top: 120px;
   padding-bottom: 183px;
 }
