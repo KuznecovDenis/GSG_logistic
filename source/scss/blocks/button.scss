@@ -1,14 +1,10 @@
-button {
-  vertical-align: top;
-}
-
 .button {
   font: inherit;
   text-align: center;
-  color: #F5F5F5;
+  color: $text-light;
   margin: 0;
   padding: 0;
-  background-color: #4F11FF;
+  background-color: $primary-color;
   border-radius: 3px;
   border: 0;
   font-size: 16px;
@@ -37,6 +33,20 @@ button {
       height: 15px;
       margin-top: 2px;
       margin-left: 16px;
+    }
+  }
+
+  &--slider {
+    padding: 22px 19px 23px;
+    width: 60px;
+    height: 60px;
+
+    &:hover:not(&-disabled) {
+      opacity: 0.8;
+    }
+
+    &-disabled {
+      background-color: $bg-dark;
     }
   }
 }

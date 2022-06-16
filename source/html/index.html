@@ -300,7 +300,7 @@
       </div>
     </section>
 
-    <section class="solution">
+    <section class="solution solution__wrapper">
       <h2 class="solution__title title">Решения</h2>
       <p class="solution__description description">
         Доступно решаем ваши проблемы,
@@ -308,11 +308,11 @@
           а все гарантии закреплены договором.
         </span>
       </p>
-      <div class="solution__wrapper slider-sol">
-        <ol class="solution__list">
-          <li class="solution__item slider-sol__item">
-            <h3 class="solution__title">Гарантия сроков поставки</h3>
-            <p class="solution__text">
+      <div class="solution__slider slider-sol">
+        <ol class="slider-sol__list">
+          <li class="slider-sol__item">
+            <h3 class="slider-sol__title slider-sol__title--1">Гарантия сроков поставки</h3>
+            <p class="slider-sol__text">
               Мы строго следим за состоянием ТС,
               чтобы избежать непредвиденные
               ситуации. Для одновременной доставки
@@ -323,9 +323,9 @@
               по всем точкам выгрузки.
             </p>
           </li>
-          <li class="solution__item slider-sol__item">
-            <h3 class="solution__title">Работаем круглосуточно</h3>
-            <p class="solution__text">
+          <li class="slider-sol__item">
+            <h3 class="slider-sol__title slider-sol__title--2">Работаем круглосуточно</h3>
+            <p class="slider-sol__text">
               Для ускорения сроков доставки
               и минимизации простоя машины,
               наши склады работают круглосуточно.
@@ -334,9 +334,9 @@
               без предварительного предупреждения.
             </p>
           </li>
-          <li class="solution__item slider-sol__item">
-            <h3 class="solution__title">Хранение от 1 палета</h3>
-            <p class="solution__text">
+          <li class="slider-sol__item">
+            <h3 class="slider-sol__title slider-sol__title--3">Хранение от 1 палета</h3>
+            <p class="slider-sol__text">
               Принимаем на хранение от 1 палета.
               Вы приобретаете только место
               для размещения вашего груза,
@@ -344,9 +344,9 @@
               какой-то минимальный объём.
             </p>
           </li>
-          <li class="solution__item slider-sol__item">
-            <h3 class="solution__title">Страхование груза</h3>
-            <p class="solution__text">
+          <li class="slider-sol__item">
+            <h3 class="slider-sol__title slider-sol__title--4">Страхование груза</h3>
+            <p class="slider-sol__text">
               Собственная служба безопасности.
               Мы тщательно проверяем при приеме
               на работу водителей и сотрудников
@@ -357,9 +357,9 @@
               стоимости груза во всех случаях.
             </p>
           </li>
-          <li class="solution__item slider-sol__item">
-            <h3 class="solution__title">Фиксированная цена</h3>
-            <p class="solution__text">
+          <li class="slider-sol__item">
+            <h3 class="slider-sol__title slider-sol__title--5">Фиксированная цена</h3>
+            <p class="slider-sol__text">
               Стоимость которую мы первоначально
               озвучили - не меняется. При условии,
               что заявленный вес и объём груза
@@ -369,9 +369,9 @@
               не беспокоить вас лишний раз.
             </p>
           </li>
-          <li class="solution__item slider-sol__item">
-            <h3 class="solution__title">Температурный режим</h3>
-            <p class="solution__text">
+          <li class="slider-sol__item">
+            <h3 class="slider-sol__title slider-sol__title--6">Температурный режим</h3>
+            <p class="slider-sol__text">
               Пристально следим за исправностью
               рефрижераторов в машинах. Механики
               проводят ТО согласно графикам.
@@ -379,9 +379,9 @@
               доставлять груз в холоде.
             </p>
           </li>
-          <li class="solution__item slider-sol__item">
-            <h3 class="solution__title">Всегда на связи</h3>
-            <p class="solution__text">
+          <li class="slider-sol__item">
+            <h3 class="slider-sol__title slider-sol__title--7">Всегда на связи</h3>
+            <p class="slider-sol__text">
               Подключение системы МОВИЗОР,
               к каждой машине, позволяет следить
               за каждым движением наших водителей.
@@ -390,9 +390,9 @@
               водителя, для вашего спокойства.
             </p>
           </li>
-          <li class="solution__item slider-sol__item">
-            <h3 class="solution__title">Соблюдаем правила транспортировки</h3>
-            <p class="solution__text">
+          <li class="slider-sol__item">
+            <h3 class="slider-sol__title slider-sol__title--8">Соблюдаем правила транспортировки</h3>
+            <p class="slider-sol__text">
               Наши водители проинструктированы.
               Ими осуществляется контроль процесса
               погрузки. Важное внимание уделяется
@@ -403,9 +403,9 @@
               фиксируется поручнями и стяжкам.
             </p>
           </li>
-          <li class="solution__item slider-sol__item">
-            <h3 class="solution__title">Обслуженный парк ТС</h3>
-            <p class="solution__text">
+          <li class="slider-sol__item">
+            <h3 class="slider-sol__title slider-sol__title--9">Обслуженный парк ТС</h3>
+            <p class="slider-sol__text">
               Заказывая у нас доставку, вы можете
               быть уверены в безопасности. Прежде
               чем назначить для вас машину, мы
@@ -413,24 +413,44 @@
             </p>
           </li>
         </ol>
-        <div class="solution__button slider-sol__buttons">
-          <button class="button button--slider button--slider-disabled">
+        <div class="slider-sol__controls">
+          <button class="slider-sol__control slider-sol__control--current">
+            <span class="visually-hidden">1</span>
+          </button>
+          <button class="slider-sol__control">
+            <span class="visually-hidden">2</span>
+          </button>
+          <button class="slider-sol__control">
+            <span class="visually-hidden">3</span>
+          </button>
+          <button class="slider-sol__control">
+            <span class="visually-hidden">4</span>
+          </button>
+          <button class="slider-sol__control">
+            <span class="visually-hidden">5</span>
+          </button>
+          <button class="slider-sol__control">
+            <span class="visually-hidden">6</span>
+          </button>
+          <button class="slider-sol__control">
+            <span class="visually-hidden">7</span>
+          </button>
+          <button class="slider-sol__control">
+            <span class="visually-hidden">8</span>
+          </button>
+          <button class="slider-sol__control">
+            <span class="visually-hidden">9</span>
+          </button>
+        </div>
+        <div class="slider-sol__buttons">
+          <button class="button button--slider button--slider-disabled" disabled>
             <span class="visually-hidden">Слайд назад</span>
+            <img src="img/svg/btn-slide-prev.svg" alt="">
           </button>
           <button class="button button--slider">
             <span class="visually-hidden">Слайд вперед</span>
+            <img src="img/svg/btn-slide-next.svg" alt="">
           </button>
-        </div>
-        <div class="solution__controls slider-sol__controls">
-          <button class="slider-sol__control slider-sol__control--current">1</button>
-          <button class="slider-sol__control">2</button>
-          <button class="slider-sol__control">3</button>
-          <button class="slider-sol__control">4</button>
-          <button class="slider-sol__control">5</button>
-          <button class="slider-sol__control">6</button>
-          <button class="slider-sol__control">7</button>
-          <button class="slider-sol__control">8</button>
-          <button class="slider-sol__control">9</button>
         </div>
       </div>
     </section>
