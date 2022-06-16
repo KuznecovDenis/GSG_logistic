@@ -1,0 +1,51 @@
+
+.about-company__wrapper {
+  padding-top: 45px;
+  background-color: $bg-dark;
+  background-image: url(../img/about-bg_x1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 20px;
+  color: $text-light;
+  margin-bottom: 70px;
+}
+
+.about-company__content {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.about-company__title {
+  margin-bottom: 22px;
+
+  &::before {
+    background-color: $bg-light;
+  }
+}
+
+.about-company__description {
+  margin-bottom: 40px;
+}
+
+.about-company__text{
+  margin: 0;
+  margin-bottom: 41px;
+  padding-top: 39px;
+  position: relative;
+
+  &::before{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 16px;
+    background-image: url(../img/svg/quote.svg);
+    top: 0;
+  }
+}
+
+.about-company__image{
+  width: 320px;
+  height: 485px;
+  margin: 0 auto;
+}
+

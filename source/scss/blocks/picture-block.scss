@@ -1,0 +1,36 @@
+.picture-block {
+  position: relative;
+}
+
+.picture-block__description {
+  margin-bottom: 13px;
+  margin-left: 20px;
+  padding-left: 174px;
+}
+
+.about-company__image .picture-block__title {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 700;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 135px;
+    height: 74px;
+    background-image: url(../img/svg/sign.svg);
+    left: 15px;
+  }
+}
+
+.picture-block__text {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.picture-block__image {
+  width: 320px;
+  height: 406px;
+}
