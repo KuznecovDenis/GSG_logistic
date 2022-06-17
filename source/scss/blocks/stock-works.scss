@@ -1,0 +1,50 @@
+.stock-works {
+  background-color: $bg-dark;
+  color: $text-light;
+}
+
+.stock-works__wrapper {
+  padding-top: 90px;
+  padding-bottom: 70px;
+  width: 300px;
+  margin: 0 auto;
+
+  &--inner{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.stock-works__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stock-works__title {
+  margin-bottom: 22px;
+  &::before {
+    background-color: $bg-light;
+  }
+}
+
+.stock-works__description {
+  margin-bottom: 40px;
+}
+
+.stock-works__text {
+  position: relative;
+  margin: 0;
+  padding-top: 22px;
+  margin-bottom: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.stock-works__button {
+  order: 1;
+}
+
+.stock-works__manager {
+  margin-bottom: 40px;
+}
