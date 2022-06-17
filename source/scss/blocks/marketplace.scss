@@ -1,0 +1,55 @@
+.marketplace__wrapper {
+  padding-top: 90px;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.marketplace__title {
+  margin-bottom: 22px;
+}
+
+.marketplace__descrtiption {
+  margin-bottom: 30px;
+}
+
+.marketplace__list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.marketplace__card-title {
+  margin: 0;
+  margin-bottom: 19px;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  padding-top: 73px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 0;
+    height: 50px;
+    width: 44px;
+  }
+
+  &--fbs::before {
+    background-image: url(../img/svg/fbs-icon.svg);
+  }
+
+  &--box::before {
+    width: 42px;
+    background-image: url(../img/svg/box-icon.svg);
+  }
+
+  &--hand-box::before {
+    background-image: url(../img/svg/hand-box-icon.svg);
+  }
+}
+
+.marketplace__card-description {
+  margin-bottom: 30px;
+}
