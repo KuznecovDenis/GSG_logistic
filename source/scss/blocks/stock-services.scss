@@ -1,0 +1,35 @@
+
+.stock-services__wrapper {
+  padding-top: 90px;
+  margin: 0 auto;
+  width: 280px;
+
+  &--image {
+    max-width: 420px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.stock-services__title {
+  margin-bottom: 22px;
+}
+
+.stock-services__descrtiption {
+  margin-bottom: 40px;
+}
+
+.stock-services__text {
+  padding-top: 22px;
+  position: relative;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.stock-services__button {
+  margin-bottom: 40px;
+}
+
+.stock-services__image {
+  width: 100%;
+}
