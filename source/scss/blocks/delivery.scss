@@ -1,0 +1,44 @@
+.delivery__wrapper {
+  padding-top: 40px;
+
+  &--inner {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  &--image {
+    max-width: 420px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.delivery__title {
+  margin-bottom: 22px;
+}
+
+.delivery__description{
+  margin-bottom: 40px;
+}
+
+.delivery__text {
+  padding-top: 22px;
+  margin: 0;
+  margin-bottom: 40px;
+  position: relative;
+
+  b {
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
+.delivery__button {
+  margin-left: 10px;
+  margin-bottom: 40px;
+}
+
+.delivery__image {
+  width: 100%;
+}
+
