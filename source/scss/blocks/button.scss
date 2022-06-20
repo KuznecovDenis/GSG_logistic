@@ -49,4 +49,69 @@
       background-color: $bg-dark;
     }
   }
+
+  &--question {
+    background-color: $bg-extra;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 19px;
+      width: 2px;
+      border-radius: 1px;
+      height: 20px;
+      background-color: $primary-color;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 19px;
+      left: 10px;
+      width: 20px;
+      height: 2px;
+      border-radius: 1px;
+      background-color: $primary-color;
+    }
+
+    &-active {
+      background-color: $bg-extra;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      position: relative;
+
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 19px;
+        width: 2px;
+        height: 20px;
+        border-radius: 1px;
+        transform: rotate(45deg);
+        background-color: $accent-red;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 19px;
+        left: 10px;
+        width: 20px;
+        height: 2px;
+        border-radius: 1px;
+        transform: rotate(45deg);
+        background-color: $accent-red;
+      }
+    }
+  }
 }
+
+
