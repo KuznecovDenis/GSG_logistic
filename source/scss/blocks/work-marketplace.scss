@@ -1,0 +1,124 @@
+
+
+.work-marketplace__wrapper {
+  padding-top: 30px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.work-marketplace__title {
+  margin: 0 10px 23px;
+  font-size: 30px;
+  font-weight: 700;
+
+}
+
+.work-marketplace__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.work-marketplace__item {
+  box-sizing: border-box;
+  position: relative;
+  background-color: $bg-dark;
+  width: 300px;
+  min-height: 196px;
+  border-radius: 3px;
+  color: $text-light;
+  margin-bottom: 20px;
+  padding: 30px 20px 25px;
+
+  &--01 {
+    background-color: $bg-dark;
+    background-image: url(../img/docs-bg_x1.png);
+    background-position: 159px 59px;
+    background-repeat: no-repeat;
+  }
+
+  &--02 {
+    background-color: $bg-dark;
+    background-image: url(../img/wb-bg_x1.png);
+    background-position: 173px 28px;
+    background-repeat: no-repeat;
+  }
+
+  &--03 {
+    background-color: $bg-dark;
+    background-image: url(../img/box-bg_x1.png);
+    background-position: 181px 9px;
+    background-repeat: no-repeat;
+  }
+
+  &--04 {
+    background-color: $bg-dark;
+    background-image: url(../img/hand-bg_x1.png);
+    background-position: 192px 44px;
+    background-repeat: no-repeat;
+  }
+
+  &--05 {
+    background-color: $bg-dark;
+    background-image: url(../img/bg-title_x1.png);
+    background-position: 136px 9px;
+    background-repeat: no-repeat;
+  }
+
+  &--06 {
+    background-color: $bg-dark;
+    background-image: url(../img/woman-bg_x1.png);
+    background-position: 161px 0px;
+    background-repeat: no-repeat;
+  }
+}
+
+
+.work-marketplace__item-title {
+  margin: 0;
+  padding-top: 68px;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    height: 45px;
+    width: 65px;
+  }
+
+  &--01::before {
+    background-image: url(../img/svg/01-market.svg);
+    height: 44px;
+    width: 55px;
+  }
+
+  &--02::before {
+    background-image: url(../img/svg/02-market.svg);
+  }
+
+  &--03::before {
+    background-image: url(../img/svg/03-market.svg);
+  }
+
+  &--04::before {
+    background-image: url(../img/svg/04-market.svg);
+  }
+
+  &--05::before {
+    background-image: url(../img/svg/05-market.svg);
+  }
+
+  &--06::before {
+    background-image: url(../img/svg/06-market.svg);
+  }
+}
+
+.work-marketplace__button {
+  margin: 0 20px;
+}
