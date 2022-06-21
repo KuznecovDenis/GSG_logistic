@@ -1,0 +1,23 @@
+.geography {
+  min-height: 558px;
+  position: relative;
+  overflow-x: hidden;
+  padding-top: 70px;
+}
+
+.geography__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.geography__title {
+  margin-bottom: 22px;
+}
+
+.geography__img {
+  top: 37px;
+  left: 50%;
+  width: 678px;
+  margin-left: -289px;
+  position: absolute;
+}
