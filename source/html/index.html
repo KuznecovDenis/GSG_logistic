@@ -781,37 +781,46 @@
     </section>
 
     <section class="forms">
-      <h2 class="forms__title title">Форма заявки</h2>
-      <p class="forms__descrtiption description">
-        <span class="description--bold">Оставьте заявку,</span>
-         и вам перезвонит ваш личный менеджер
-      </p>
-      <ul class="forms__text-wraper">
-        <li class="forms__text text--dotsLeft">Подробно ответит по всем вашим вопросам </li>
-        <li class="forms__text text--dotsLeft">Расскажет про работу и как начать сотрудничество</li>
-        <li class="forms__text text--dotsLeft">Согласует время заезда вашего транспорта или встречи</li>
-      </ul>
-      <div class="forms__manager">
-        <img class="forms__manager-img" src="img/manager_forms_x1" alt="аватр личного менеджера" width="79" height="79">
-        <p class="forms__manager-name">
-          Гасанов Хазар <br>
-          Габильевич
+      <div class="forms__wrapper">
+        <h2 class="forms__title title">Форма заявки</h2>
+        <p class="forms__descrtiption description">
+          <span class="description--bold">Оставьте заявку,</span>
+           и вам перезвонит ваш личный менеджер
         </p>
-        <p class="forms__manager-jobTitle">Ваш личный менеджер</p>
+        <ul class="forms__list">
+          <li class="forms__item dots">Подробно ответит по всем вашим вопросам </li>
+          <li class="forms__item dots">Расскажет про работу и как начать сотрудничество</li>
+          <li class="forms__item dots">Согласует время заезда вашего транспорта или встречи</li>
+        </ul>
+        <div class="forms__manager">
+          <img class="forms__manager-img" src="img/manager_forms_x1.png" alt="аватр личного менеджера" width="59" height="59">
+          <div class="forms__manager-text">
+            <p class="forms__manager-name">
+              Гасанов Хазар <br>
+              Габильевич
+            </p>
+            <p class="forms__manager-jobTitle">Ваш личный менеджер</p>
+          </div>
+        </div>
+        <form class="form" action="#" method="post">
+          <label class="form__label" for="telephone">Введите ваш телефон</label>
+          <input class="form__input" type="tel" id="telephone" placeholder="+7 (999) 888-77-66" required="required">
+          <label class="form__label" for="email">Введите e-mail</label>
+          <input class="form__input" type="email" id="email" placeholder="example@gsg-transfer.ru">
+          <label  class="form__label" for="coment">Введите ваш комментарий</label>
+          <textarea class="form__input form__textarea" name="" id="coment" cols="30" rows="10" placeholder="Вопрос в свободной форме"></textarea>
+          <div class="form__inner-wrapper">
+              <div class="form__politics">
+                <input class=" visually-hidden form__checkbox" id="politics" type="checkbox" checked required="required">
+                <label class="form__politics-label" for="politics">
+                  Соглашаюсь с <a href="politics.html" target="_blank"> условиями </a>обработки
+                  персональных данных</label>
+                </label>
+              </div>
+            <button class="form__button button button--popUp" >Оставить заявку</button>
+          </div>
+        </form>
       </div>
-      <form action="#" method="post">
-        <label for="telephone">Введите ваш телефон</label>
-        <input type="tel" id="telephone" placeholder="+7 (999) 888-77-66">
-        <label for="email">Введите e-mail</label>
-        <input type="email" id="email" placeholder="example@gsg-transfer.ru">
-        <textarea name="" id="" cols="30" rows="10" placeholder="Вопрос в свободной форме"></textarea>
-        <label>
-          <input type="checkbox" checked>
-          Соглашаюсь с <a href="politics.html" target="_blank"> условиями обработки
-          персональных данных</a>
-        </label>
-        <button class="button button--popUp" >Оставить заявку</button>
-      </form>
     </section>
 
     <section class="geography">
@@ -861,6 +870,10 @@
       <span>
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9d1093ac22ece80bf06d6fe00ca06b4d645134fe70bb63ead1b319f1b5af402a&amp;source=constructor" width="358" height="300" frameborder="0"></iframe>
       </span>
+    </section>
+
+    <section class="pop-up">
+
     </section>
   </main>
   @@include("../html/parts/footer.html")

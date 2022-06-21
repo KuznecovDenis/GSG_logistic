@@ -1,0 +1,82 @@
+.forms {
+  background-color: $bg-dark;
+  color: $text-light;
+  border-radius: 20px;
+}
+
+.forms__wrapper {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.forms__title {
+  margin-bottom: 22px;
+
+  &::before {
+    background-color: $bg-light;
+  }
+}
+
+.forms__descrtiption {
+  margin-bottom: 30px;
+}
+
+.forms__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  .dots::after {
+    top: 5px;
+  }
+}
+
+.forms__item {
+  padding-left: 22px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.forms__manager {
+  padding-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 3px;
+    background-color: $accent-gold;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+}
+
+.forms__manager-img {
+  border: 2px solid $accent-gold;
+  border-radius: 50%;
+}
+
+.forms__manager-text {
+ margin-left: 20px;
+}
+
+.forms__manager-name {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.forms__manager-jobTitle {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+
+
