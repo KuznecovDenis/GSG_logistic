@@ -4,4 +4,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 15px;
+  }
 }

@@ -3,6 +3,10 @@
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }
 
 .page__body {
@@ -11,7 +15,10 @@
   padding: 0;
   color: $text-dark;
   background-color: $bg-light;
-  overflow: scroll;
+
+  @media (min-width: $tablet-width) {
+    min-width: 744px;
+  }
 
   min-height: 100%;
   display: grid;
