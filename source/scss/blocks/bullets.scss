@@ -6,6 +6,27 @@
   // height: 483px;
   // width: calc(100% - 20px);
   padding: 0 30px;
+  font-size: 16px;
+  box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.1);
+
+  @media (min-width: $tablet-width) {
+    width: 697px;
+    padding: 48px 60px 0px;
+  }
+}
+
+.bullets__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    row-gap: 47px;
+  }
 }
 
 .bullets__title {
@@ -14,13 +35,14 @@
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
-}
+  box-sizing: border-box;
 
-.bullets__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 50px;
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    max-width: 288px;
+    padding-right: 35px;
+    margin: 0;
+  }
 }
 
 .bullets__item {
@@ -28,9 +50,14 @@
   margin-bottom: 30px;
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    width: 288px;
+    margin: 0;
+  }
+
   b {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   &::before {

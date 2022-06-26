@@ -3,6 +3,10 @@
   position: relative;
   min-height: 974px;
   margin-top: 40px; //если хедер с позишн фиксед
+
+  @media (min-width: $tablet-width) {
+    min-height: 924px;
+  }
 }
 
 .promo__bg {
@@ -14,6 +18,11 @@
   background-size: 1440px;
   padding-top: 120px;
   padding-bottom: 183px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 164px;
+    padding-bottom: 222px;
+  }
 }
 
 .promo__wrapper {
@@ -21,21 +30,37 @@
   // width: 93.75%;
   // width: calc(100% - 20px);
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 20px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 707px;
+    text-align: left;
+    padding: 0 30px;
+  }
 }
 
 .promo__title {
-  padding: 0 15px 20px;
+  margin-bottom: 20px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
 }
 
 .promo__description {
-  padding: 0 15px 50px;
+  padding: 0 15px;
+  margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 75px;
+    padding: 0;
+    padding-right: 103px;
+  }
 }
 
 .promo__bullets {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   left: 0;
   right: 0;
   margin: auto;
