@@ -2,14 +2,27 @@
   padding-top: 90px;
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 120px;
+    width: 732px;
+  }
 }
 
 .marketplace__title {
   margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
 }
 
 .marketplace__descrtiption {
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 10px 60px;
+  }
 }
 
 .marketplace__list{
@@ -17,6 +30,15 @@
   padding: 0;
   margin: 0;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 15px;
+  }
+}
+
+.marketplace__card:nth-child(2) {
+  max-width: 255px;
 }
 
 .marketplace__card-title {
