@@ -4,16 +4,30 @@
   background-repeat: no-repeat;
   background-position: center top;
   color: $text-light;
+
+  @media (min-width: $tablet-width) {
+    background-image: url(../img/svg/bg-tablet-gsg-stock.svg);
+    background-position: center 12%;
+  }
 }
 
 .stock__wrapper {
   padding-top: 50px;
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 100px;
+    width: 732px;
+  }
 }
 
 .stock__title {
   margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
 
   &::before {
     background-color: $bg-light;
@@ -22,6 +36,10 @@
 
 .stock__description {
   margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 10px 45px;
+  }
 }
 
 .stock__text {
@@ -29,6 +47,20 @@
   padding-top: 22px;
   margin: 0;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+    max-width: 45%;
+    padding-left: 12px;
+
+    &.dots {
+      &::after {
+        top: 5px;
+        left: -10px
+      }
+    }
+  }
 
   b {
     font-size: 16px;
@@ -41,6 +73,12 @@
   margin: 0 auto;
   overflow-x: scroll;
   margin-bottom: 45px;
+
+  @media (min-width: $tablet-width) {
+    width: 732px;
+    overflow-x: auto;
+    margin-bottom: 0;
+  }
 
   &::-webkit-scrollbar {
     border-radius: 4px;
@@ -61,6 +99,10 @@
   padding-bottom: 50px;
   font-size: 16px;
   font-weight: 300;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 
