@@ -2,12 +2,25 @@
   width: 300px;
   margin: 0 auto;
   margin-bottom: 70px;
+
+  @media (min-width: $tablet-width) {
+    width: 732px;
+    margin-bottom: 90px;
+  }
 }
 
 .solution__title {
   margin: 0 10px 22px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 25px;
+  }
 }
 
 .solution__description {
   margin: 0 10px 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
 }
