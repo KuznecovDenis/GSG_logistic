@@ -1,11 +1,25 @@
 .picture-block {
+  width: 320px;
+  max-height: 485px;
+  margin: 0 auto;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 732px;
+  }
 }
 
 .picture-block__description {
-  margin-bottom: 13px;
+  padding-bottom: 13px;
   margin-left: 20px;
   padding-left: 174px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0px;
+    padding-bottom: 74px;
+    padding-left: 212px;
+    padding-top: 10px;
+  }
 }
 
 .about-company__image .picture-block__title {
@@ -14,13 +28,27 @@
   font-size: 14px;
   font-weight: 700;
 
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    margin-bottom: 7px;
+  }
+
   &::before {
     position: absolute;
     content: "";
     width: 135px;
     height: 74px;
     background-image: url(../img/svg/sign.svg);
+    background-repeat: no-repeat;
     left: 15px;
+    top: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 182px;
+      height: 99px;
+      left: 5px;
+      border: 1px solid red;
+    }
   }
 }
 
@@ -28,9 +56,21 @@
   margin: 0;
   font-size: 12px;
   font-weight: 300;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+  }
 }
 
 .picture-block__image {
   width: 320px;
   height: 406px;
+
+  @media (min-width: $tablet-width) {
+    width: 565px;
+    height: 684px;
+    position: absolute;
+    bottom: 0;
+    right: -180px;
+  }
 }

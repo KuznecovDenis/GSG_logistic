@@ -8,15 +8,28 @@
   border-radius: 20px;
   color: $text-light;
   margin-bottom: 70px;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    overflow: hidden;
+  }
 }
 
 .about-company__content {
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 732px;
+  }
 }
 
 .about-company__title {
   margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
 
   &::before {
     background-color: $bg-light;
@@ -25,6 +38,11 @@
 
 .about-company__description {
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 10px 50px;
+    width: 580px;
+  }
 }
 
 .about-company__text{
@@ -32,6 +50,11 @@
   margin-bottom: 41px;
   padding-top: 39px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 10px 54px;
+    width: 55%;
+  }
 
   &::before{
     position: absolute;
@@ -43,9 +66,5 @@
   }
 }
 
-.about-company__image{
-  width: 320px;
-  height: 485px;
-  margin: 0 auto;
-}
+
 
