@@ -4,8 +4,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   &:hover {
     .question__title {
@@ -25,6 +25,11 @@
     background-color: $bg-dark;
     top: 0;
     left: -10px;
+
+    @media (min-width: $tablet-width) {
+      left: 0;
+      width: 732px;
+    }
   }
 
   &:last-child::after {
@@ -35,6 +40,11 @@
     background-color: $bg-dark;
     bottom: 0;
     left: -10px;
+
+    @media (min-width: $tablet-width) {
+      left: 0;
+      width: 732px;
+    }
   }
 }
 
@@ -45,6 +55,11 @@
   margin: 0;
   max-width: 80%;
 
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    padding-left: 10px;
+  }
+
   &--active {
     font-weight: 700;
   }
@@ -52,7 +67,13 @@
 
 .question__description {
   margin: 0;
-  margin-top: 30px;
+  margin-top: 20px;
+  max-width: 85%;
+  padding-left: 10px;
+}
+
+.question__btn {
+  margin-right: 10px;
 }
 
 

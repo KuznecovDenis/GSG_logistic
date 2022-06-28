@@ -2,14 +2,28 @@
   width: 280px;
   margin: 0 auto;
   padding-top: 80px;
+
+  @media (min-width: $tablet-width) {
+    width: 732px;
+    padding-top: 120px;
+  }
 }
 
 .questions__title {
   margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
 }
 
 .questions__descrtiption {
   margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 10px 50px;
+    padding-right: 125px;
+  }
 }
 
 .questions__list {
@@ -17,4 +31,8 @@
   margin: 0;
   padding: 0;
   margin-bottom: 80px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 120px;
+  }
 }
