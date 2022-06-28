@@ -3,15 +3,70 @@
   flex-direction: column;
 }
 
+.form__wrapper{
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    // width: 354px;
+  }
+
+  &--flex {
+    @media (min-width: $tablet-width) {
+      flex-wrap: wrap;
+      max-height: 220px;
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &--tel {
+    @media (min-width: $tablet-width) {
+      order: 1;
+      width: 354px;
+    }
+  }
+
+  &--mail {
+    @media (min-width: $tablet-width) {
+      order: 2;
+      width: 354px;
+    }
+  }
+
+  &--area {
+    @media (min-width: $tablet-width) {
+      order: 3;
+      width: 354px;
+    }
+  }
+
+  &--button {
+    align-items: center;
+
+    @media (min-width: $tablet-width) {
+      flex-direction: row;
+    }
+  }
+}
+
+
 .form__label {
   margin: 0;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 15px;
+    padding-left: 10px;
+  }
 }
 
 .form__input {
+  font-size: inherit;
   border-radius: 3px;
+  box-sizing: border-box;
   border: none;
   background-color: $bg-light;
   padding-left: 10px;
@@ -19,21 +74,29 @@
   padding-bottom: 12px;
   margin-bottom: 30px;
 
+  @media (min-width: $tablet-width) {
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+  }
+
   &:focus {
     outline: 2px solid #2C9AFF;
   }
 }
 
 .form__textarea {
+  font-size: 14px;
+  font-family: "Roboto", Arial, sans-serif;;
   box-sizing: border-box;
   resize: none;
   height: 130px;
-}
 
-.form__inner-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    height: 175px;
+  }
 }
 
 .form__politics {
@@ -41,6 +104,12 @@
   order: 2;
   margin: 0 10px;
   margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+    margin-top: 0;
+    width: 250px;
+  }
 }
 
 .form__checkbox {
