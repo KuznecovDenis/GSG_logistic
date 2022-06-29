@@ -3,15 +3,34 @@
   position: relative;
   overflow-x: hidden;
   padding-top: 70px;
+  @media (min-width: $tablet-width) {
+    padding-top: 110px;
+    min-height: 831px;
+  }
 }
 
 .geography__wrapper {
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 732px;
+  }
 }
 
 .geography__title {
   margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
+}
+
+.geography__descrtiption {
+  @media (min-width: $tablet-width) {
+    margin: 0 10px;
+    padding-right: 140px;
+  }
 }
 
 .geography__img {
@@ -20,4 +39,7 @@
   width: 678px;
   margin-left: -289px;
   position: absolute;
+  @media (min-width: $tablet-width) {
+    bottom: 0;
+  }
 }
