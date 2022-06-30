@@ -17,8 +17,15 @@
     min-width: 171px;
   }
 
-  &:hover {
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    min-width: 260px;
+    padding: 20px 10px 21px;
+  }
+
+  &:not(&--active):hover {
     font-weight: 500;
+    // box-shadow: 3px 5px 10px rgba($color: $bg-dark, $alpha: 0.15)
   }
 
   &--active {

@@ -4,6 +4,14 @@
   margin: 0;
   padding: 0;
 
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 45px;
+  }
+
   &--main {
     font-size: 14px;
     font-weight: 400;
@@ -13,10 +21,6 @@
     @media (min-width: $tablet-width) {
       font-size: 22px;
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    font-size: 42px;
   }
 
   &--bold {

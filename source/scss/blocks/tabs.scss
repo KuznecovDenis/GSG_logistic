@@ -8,4 +8,8 @@
   @media (min-width: $tablet-width) {
     column-gap: 15px;
   }
+
+  @media (min-width: $desktop-width) {
+    gap: 20px
+  }
 }

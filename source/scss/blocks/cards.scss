@@ -5,6 +5,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+
+  @media (min-width: $desktop-width) {
+    gap: 17px;
+  }
 }
 
 .cards__item {
@@ -12,5 +16,9 @@
 
   @media (min-width: $tablet-width) {
     max-width: 354px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 372px;
   }
 }
