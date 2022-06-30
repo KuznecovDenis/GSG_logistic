@@ -7,6 +7,14 @@
   @media (min-width: $tablet-width) {
     min-height: 924px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 95px;
+    min-height: 650px;
+    height: calc(100vh - 95px);
+    max-height: 845px;
+    // overflow: hidden;
+  }
 }
 
 .promo__bg {
@@ -23,6 +31,13 @@
     padding-top: 164px;
     padding-bottom: 222px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 100%;
+    background-size: cover;
+    padding: 0;
+    // padding-top: 164px;
+  }
 }
 
 .promo__wrapper {
@@ -36,14 +51,30 @@
   @media (min-width: $tablet-width) {
     width: 707px;
     text-align: left;
-    padding: 0 30px;
+    padding: 0 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1152px;
+    padding: 0 12px;
   }
 }
 
 .promo__title {
   margin-bottom: 20px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 15vh;
+    width: 66%;
+    margin-bottom: 17px;
+  }
+
+  @media (min-width: $desktop-full) {
+    padding-top: 20vh;
   }
 }
 
@@ -56,6 +87,12 @@
     padding: 0;
     padding-right: 103px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 605px;
+    padding: 0;
+    margin-bottom: 45px;
+  }
 }
 
 .promo__bullets {
@@ -64,6 +101,14 @@
   left: 0;
   right: 0;
   margin: auto;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10vh;
+  }
+
+  // @media (min-width: $desktop-full) {
+  //   margin-bottom: 95px;
+  // }
 }
 
 
