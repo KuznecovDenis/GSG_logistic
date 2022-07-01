@@ -20,6 +20,11 @@
     padding: 90px 10px 70px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding: 100px 10px 80px;
+    width: 1152px;
+  }
+
   &--line {
     @media (min-width: $tablet-width) {
       display: flex;
