@@ -7,6 +7,10 @@
     width: 732px;
     padding-top: 120px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1152px;
+  }
 }
 
 .questions__title {
@@ -23,6 +27,10 @@
   @media (min-width: $tablet-width) {
     margin: 0 10px 50px;
     padding-right: 125px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
   }
 }
 

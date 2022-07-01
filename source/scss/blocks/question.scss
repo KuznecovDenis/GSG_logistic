@@ -7,13 +7,28 @@
   padding-top: 20px;
   padding-bottom: 20px;
 
-  &:hover {
+  &--active:hover {
+
+    .question__btn {
+      opacity: 0.7;
+    }
+  }
+
+  &:not(&--active):hover {
     .question__title {
       font-weight: 700;
     }
 
     .question__btn {
-      opacity: 0.8;
+      background-color: $primary-color;
+
+      &::before {
+        background-color: $bg-light;
+      }
+
+      &::after {
+        background-color: $bg-light;
+      }
     }
   }
 
@@ -28,7 +43,7 @@
 
     @media (min-width: $tablet-width) {
       left: 0;
-      width: 732px;
+      width: 100%;
     }
   }
 
@@ -43,7 +58,7 @@
 
     @media (min-width: $tablet-width) {
       left: 0;
-      width: 732px;
+      width: 100%;
     }
   }
 }
@@ -60,6 +75,11 @@
     padding-left: 10px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-left: 12px;
+    max-width: 80%;
+  }
+
   &--active {
     font-weight: 700;
   }
@@ -73,11 +93,20 @@
     padding-left: 10px;
   }
 
+  @media (min-width: $desktop-width) {
+    max-width: 80%;
+    padding-left: 12px;
+  }
+
 }
 
 .question__btn {
   @media (min-width: $tablet-width) {
     margin-right: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 12px;
   }
 }
 
