@@ -7,6 +7,11 @@
     width: 732px;
     margin-bottom: 90px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1152px;
+    margin-bottom: 120px;
+  }
 }
 
 .solution__title {
@@ -22,5 +27,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 12px ;
+    width: 842px;
   }
 }
