@@ -14,6 +14,11 @@
     padding-bottom: 90px;
   }
 
+  @media (min-width: $desktop-width) {
+    width: 1152px;
+    padding: 120px 0;
+  }
+
   &--inner{
     margin-left: 10px;
     margin-right: 10px;
@@ -33,6 +38,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 12px;
+    justify-content: space-between;
   }
 }
 
@@ -54,6 +64,12 @@
     margin: 0 10px 50px;
     padding-right: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 12px 60px;
+    padding: 0;
+    width: 700px;
+  }
 }
 
 .stock-works__text {
@@ -68,12 +84,21 @@
     padding-top: 32px;
     padding-right: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 360px;
+  }
 }
 
 .stock-works__button {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width:$mobile-and-tablet-only) {
     position: absolute;
     bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: center;
+    margin-top: 70px;
   }
 }
 
@@ -84,5 +109,11 @@
     width: 50%;
     box-sizing: border-box;
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 3;
+    width: 744px;
+    margin-top: 70px;
   }
 }

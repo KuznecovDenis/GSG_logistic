@@ -10,6 +10,14 @@
     align-items: flex-start;
     padding: 25px ;
   }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+  }
 }
 
 .manger-info__img-container {
@@ -25,6 +33,11 @@
     top: 5px;
     left: 5px;
   }
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+    margin: 0;
+  }
 }
 
 .manger-info__img {
@@ -37,6 +50,21 @@
   font-weight: 700;
   margin: 0;
   margin-bottom: 52px;
+
+  @media (min-width: $desktop-width) {
+    order: 3;
+    width: 360px;
+    box-sizing: border-box;
+    padding-right: 60px;
+    margin: 0;
+  }
+}
+
+.manger-info__contacts {
+  @media (min-width: $desktop-width) {
+    width: 268px;
+    text-align: end;
+  }
 }
 
 .manger-info__tel {
