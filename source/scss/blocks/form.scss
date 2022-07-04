@@ -1,15 +1,15 @@
 .form {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 732px;
+  }
 }
 
 .form__wrapper{
   display: flex;
   flex-direction: column;
-
-  @media (min-width: $tablet-width) {
-    // width: 354px;
-  }
 
   &--flex {
     @media (min-width: $tablet-width) {
@@ -25,6 +25,10 @@
       order: 1;
       width: 354px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 360px;
+    }
   }
 
   &--mail {
@@ -32,12 +36,20 @@
       order: 2;
       width: 354px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 360px;
+    }
   }
 
   &--area {
     @media (min-width: $tablet-width) {
       order: 3;
       width: 354px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 360px;
     }
   }
 
@@ -70,6 +82,7 @@
   border: none;
   background-color: $bg-light;
   padding-left: 10px;
+  padding-right: 10px;
   padding-top: 12px;
   padding-bottom: 12px;
   margin-bottom: 30px;
