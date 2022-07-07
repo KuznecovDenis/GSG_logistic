@@ -1,0 +1,19 @@
+.pop-up {
+  position: fixed;
+  background-color: rgba($color: #000000, $alpha: 0.3);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pop-up__wrapper {
+    position: relative;
+    background: #fff;
+    padding: 30px;
+}
