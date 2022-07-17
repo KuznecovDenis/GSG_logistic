@@ -6,6 +6,7 @@
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  cursor: pointer;
 
   &--active:hover {
 
@@ -15,9 +16,9 @@
   }
 
   &:not(&--active):hover {
-    .question__title {
-      font-weight: 700;
-    }
+    // .question__title {
+    //   font-weight: 700;
+    // }
 
     .question__btn {
       background-color: $primary-color;
