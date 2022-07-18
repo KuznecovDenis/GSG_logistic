@@ -1,21 +1,28 @@
-// const burger = document.querySelector('.main-nav__toggle')
-// const nav = document.querySelector('.main-nav__wrapper')
 
-// burger.addEventListener('click', () => {
-//   nav.classList.toggle('.hide')
-// })
+const burgerMenu = () => {
+  const burger = document?.querySelector('[data-burger]')
+  const nav = document?.querySelector('[data-nav]')
 
+  const navItems = nav?.querySelectorAll('a')
 
-//   const burger = document.querySelector('.main-nav__toggle')
-//   const nav = document.querySelector('.main-nav__wrapper')
-//   const navItems = nav.querySelectorAll('a')
+  const header = document?.querySelector('.page-header')
+  console.log(header)
+  const headerHeight = header.offsetHeight
+  console.log(headerHeight)
+  nav.style.setProperty('--header-height', `${headerHeight}px`)
 
-//   burger.addEventListener('click', () => {
-//     nav.classList.toggle('hide')
-//   })
+  burger?.addEventListener('click', () => {
+    burger?.classList.toggle('main-nav__toggle--active')
+    nav.classList.toggle('main-nav--visible')
+  })
 
-//   navItems.forEach (el => {
-//     el.addEventListener('click', () => {
-//       nav.classList.add('hide')
-//     })
-//   })
+  navItems.forEach (el => {
+    el.addEventListener('click', () => {
+      // body.classList.remove('stop-scroll')
+      burger?.classList.remove('main-nav__toggle--active')
+      nav.classList.remove('main-nav--visible')
+    })
+  })
+}
+
+export default burgerMenu;

@@ -5,7 +5,12 @@
   z-index: 10;
   width: 100%;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+  min-height: 60px;
   //еще вариант залипания через дж
+
+  @media (min-width: $tablet-width) {
+    min-height: 90px;
+  }
 
   @media (min-width: $desktop-width) {
     min-height: 95px;
@@ -13,21 +18,49 @@
 }
 
 .page-header__wrapper {
-  width: 300px;
+  width: 280px;
   margin: 0 auto;
-  padding: 0px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+
+  @media (min-width: $tablet-width) {
+    width: 732px;
+    margin-top: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1128px;
+    margin-top: 19px;
+  }
 }
 
 .page-header__logo {
   display: block;
-  padding-top: 11px;
-  padding-bottom: 12px;
+  width: 123px;
   height: 37px;
+
+  @media (min-width: $tablet-width) {
+    width: 83px;
+    height: 53px;
+  }
 }
 
 .page-header__contacts {
+  z-index: 10;
+  display: none;
   text-align: center;
-  margin: 40px 0;
+  margin: 40px auto 0;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    text-align: end;
+    margin: 0;
+    margin-left: auto;
+    margin-right: 80px;
+  }
 }
 
 .page-header__tel {
@@ -36,9 +69,18 @@
   text-decoration: none;
   font-weight: 700;
   font-size: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .page-header__adress {
   margin: 0;
   margin-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 6px;
+    font-size: 14px;
+  }
 }

@@ -6,7 +6,8 @@ import slider from './modules/slider'
 
 
 window.addEventListener('DOMContentLoaded', () => {
-  modals();
+  burgerMenu()
+  modals()
   tabs('.services__tabs', '.tab', '.services__product')
   accordion('.question')
   slider()
