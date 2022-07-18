@@ -29,7 +29,7 @@ const modals = () => {
     })
   }
 
-  bindModal('.button--popUp', '.pop-up', '.pop-up .pop-up__close')
+  bindModal('[data-popUp]', '.pop-up', '.pop-up .pop-up__close')
 }
 
 export default modals;
