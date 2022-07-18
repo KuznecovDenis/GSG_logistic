@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
   <link rel="stylesheet" href="css/style.css">
   <title>GSG Transfer - логистика под ключ</title>
 </head>
@@ -445,11 +449,11 @@
         <div class="slider-sol__buttons">
           <button class="button button--slider button--slider-disabled" disabled>
             <span class="visually-hidden">Слайд назад</span>
-            <img src="img/svg/btn-slide-prev.svg" alt="">
+            <img src="img/svg/btn-slide-prev.svg" alt="слайд назад">
           </button>
           <button class="button button--slider">
             <span class="visually-hidden">Слайд вперед</span>
-            <img src="img/svg/btn-slide-next.svg" alt="">
+            <img src="img/svg/btn-slide-next.svg" alt="слайд вперед">
           </button>
         </div>
       </div>
@@ -506,7 +510,30 @@
     </section>
 
     <section class="gallery">
-      <!-- CONTENT GALLERY -->
+      <div class="gallery__wrapper">
+        <div class="swiper gallery__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide gallery__slide">Slide 1</div>
+            <div class="swiper-slide gallery__slide">Slide 2</div>
+            <div class="swiper-slide gallery__slide">Slide 3</div>
+            <div class="swiper-slide gallery__slide">Slide 4</div>
+            <div class="swiper-slide gallery__slide">Slide 5</div>
+            <div class="swiper-slide gallery__slide">Slide 6</div>
+            <div class="swiper-slide gallery__slide">Slide 7</div>
+            <div class="swiper-slide gallery__slide">Slide 8</div>
+            <div class="swiper-slide gallery__slide">Slide 9</div>
+          </div>
+        </div>
+        <div class="swiper-pagination gallery__pagination"></div>
+        <div class="slider-button">
+          <div class="swiper-button-prev button button--slider">
+            <img src="img/svg/btn-slide-prev.svg" alt="слайд назад">
+          </div>
+          <div class="swiper-button-next button button--slider">
+            <img src="img/svg/btn-slide-next.svg" alt="слайд вперед">
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="stock-works">
