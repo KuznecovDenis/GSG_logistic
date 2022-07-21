@@ -10,7 +10,8 @@
     padding: 25px 0;
     width: 100%;
     opacity: 0;
-    transition: opacity 0.4s ease-in-out;
+    transform: translateX(100%);
+    transition: opacity 0.6s ease-in-out, transform 0.9s ease-in-out;
 
     @media (min-width: $tablet-width) {
       width: 45%;
@@ -22,6 +23,7 @@
 .main-nav--visible {
   @media (max-width: $mobile-and-tablet-only) {
     opacity: 1;
+    transform: none;
   }
 }
 

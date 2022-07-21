@@ -41,7 +41,7 @@
     width: 60px;
     height: 60px;
 
-    &:hover:not(&-disabled) {
+    &:hover:not(.swiper-button-disabled) {
       opacity: 0.8;
     }
 
@@ -112,6 +112,10 @@
       }
     }
   }
+}
+
+.swiper-button-disabled {
+  background-color: $bg-dark;
 }
 
 

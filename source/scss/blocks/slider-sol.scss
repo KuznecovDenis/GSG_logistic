@@ -1,28 +1,23 @@
 .slider-sol {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
 }
 
 .slider-sol__list {
+  display: flex;
+  width: 100%;
+  height: 100%;
   list-style: none;
   margin: 0;
   padding: 0;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-  }
-
-  @media (min-width: $desktop-width) {
-    gap: 15px;
-    justify-content: space-between;
-  }
 }
 
 .slider-sol__item {
+  flex-shrink: 0;
   border: 1px solid rgba($bg-dark, 0.1);
   border-radius: 3px;
   position: relative;
@@ -124,13 +119,34 @@
 
 .slider-sol__controls {
   margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.slider-sol__control {
+.slider-sol__controls {
+  .swiper-pagination-bullet {
+    opacity: 0.3;
+    background-color: $bg-dark;
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    box-sizing: content-box;
+    margin: 0 10px !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    background-color: transparent;
+    border: 3px solid $bg-dark;
+  }
+}
+
+.slider-sol__control{
   background-color: rgba($bg-dark, 0.3);
   border: 3px solid $bg-light;
   border-radius: 50%;

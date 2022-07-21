@@ -9,6 +9,11 @@
     background-image: url(../img/svg/bg-tablet-gsg-stock.svg);
     background-position: center 12%;
   }
+
+  @media (min-width: $tablet-width) {
+    background-image: url(../img/svg/bg-desktop-gsg-stock.svg);
+    background-position: center 22%;
+  }
 }
 
 .stock__wrapper {
@@ -19,6 +24,11 @@
   @media (min-width: $tablet-width) {
     padding-top: 100px;
     width: 732px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 115px;
+    width: 1152px;
   }
 }
 
@@ -40,6 +50,11 @@
   @media (min-width: $tablet-width) {
     margin: 0 10px 45px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 800px;
+    margin: 0 12px 45px;
+  }
 }
 
 .stock__text {
@@ -53,6 +68,10 @@
     padding: 0;
     max-width: 45%;
     padding-left: 12px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 330px;
+  }
 
     &.dots {
       &::after {

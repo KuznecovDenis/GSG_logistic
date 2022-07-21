@@ -55,8 +55,80 @@
     content: "";
     width: 45px;
     height: 45px;
-    border-radius: 50%;
+    background-repeat: no-repeat;
     left: 0;
+  }
+
+  &--dryer::before {
+    background-image: url(../img/svg/dryer.svg);
+  }
+
+  &--temperature-frigid::before {
+    background-image: url(../img/svg/temperature-frigid.svg);
+  }
+
+  &--delivery-truck::before {
+    background-image: url(../img/svg/delivery-truck.svg);
+  }
+
+  &--car::before {
+    background-image: url(../img/svg/car.svg);
+  }
+
+  &--store::before {
+    background-image: url(../img/svg/store.svg);
+  }
+
+  &--delivery-timer::before {
+    background-image: url(../img/svg/delivery-timer.svg);
+  }
+
+  &--side-up-shipping::before {
+    background-image: url(../img/svg/side-up-shipping.svg);
+  }
+
+  &--box::before {
+    background-image: url(../img/svg/box.svg);
+  }
+
+  &--trolley-delivery::before {
+    background-image: url(../img/svg/trolley-delivery.svg);
+  }
+
+  &--check::before {
+    background-image: url(../img/svg/check.svg);
+  }
+
+  &--truck::before {
+    background-image: url(../img/svg/truck.svg);
+  }
+
+  &--package-delivery::before {
+    background-image: url(../img/svg/package-delivery.svg);
+  }
+
+  &--stock-s::before {
+    background-image: url(../img/svg/stock-s.svg);
+  }
+
+  &--forklift::before {
+    background-image: url(../img/svg/forklift.svg);
+  }
+
+  &--hand-and-coins::before {
+    background-image: url(../img/svg/hand-and-coins.svg);
+  }
+
+  &--box-s::before {
+    background-image: url(../img/svg/box-s.svg);
+  }
+
+  &--box-m::before {
+    background-image: url(../img/svg/box-m.svg);
+  }
+
+  &--delivery-in-hand::before {
+    background-image: url(../img/svg/delivery-in-hand.svg);
   }
 }
 

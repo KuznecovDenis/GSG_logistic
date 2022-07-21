@@ -34,3 +34,20 @@
     width: 842px;
   }
 }
+
+// .solo {
+//   overflow: hidden;
+//   width: 100%;
+//   position: relative;
+// }
+
+// .solo-wrapper {
+//   display: flex;
+//   width: 100%;
+//   height: 100%;
+// }
+
+.solo-slide {
+  flex-shrink: 0;
+  background-color: burlywood;
+}
